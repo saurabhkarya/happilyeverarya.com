@@ -1048,8 +1048,7 @@ body.modal-open {
 .event-box {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  padding: 2% 20%;
+  align-items: space-between;
   background: #fff;
   border-radius: 8px;
 }
@@ -1067,6 +1066,7 @@ body.modal-open {
 
   /* Gray/80 */
 
+  padding: 2% 5%;
   color: #616161;
 
 
@@ -1077,3 +1077,126 @@ body.modal-open {
   flex-grow: 1;
   margin: 0px 1px;
 }
+
+.accordion {
+  display: flex;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background:#E7F3FF;
+}
+
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+  padding: 2% 0 0 0;
+  margin: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  /* identical to box height, or 200% */
+  
+  
+  /* Gray/90 */
+  
+  color: #424242;
+}
+
+.panel p span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.panel .yesno {
+  background: #FFFFFF;
+  /* Grey/Grey 40 */
+
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+
+
+  color: #000000;
+  margin-top: 2%;
+
+}
+
+.yesno-btn {
+  transition-duration: 0.4s;
+  /* Primary/White */
+
+  background: #FFFFFF;
+  /* Grey/Grey 40 */
+
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 15px 32px;
+  color: #000000;
+
+}
+
+.yesno-btn:hover,.yesno-btn:focus {
+  background-color: #000000;
+  /* Green */
+  color: white;
+}
+
+
+
+
+
+/*.accordion:after {
+  content: '\02795';
+  /~ Unicode character for "plus" sign (+) ~/
+  font-size: 13px;
+  color: #777;
+}
+
+.active:after {
+  content: "\2796";
+  /~ Unicode character for "minus" sign (-) ~/
+}*/
+
+.event-btns {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20%;
+}
+
+#let-us-know {
+  padding: 0;
+}
+
+.caret {
+  transform: rotate(270deg) scale(2.5);
+  margin: 3% 2% 0 0;
+}
+
+.active div {
+  transform: scale(2.5);
+  margin: 3% 2% 0 0;
+}
+
+

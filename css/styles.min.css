@@ -204,8 +204,9 @@ section .header {
 }
 
 .main-sec input {
-  padding: 1% 30%;
+  padding: 1% 50% 1% 2%;
   margin-top: 2%;
+  color: #000;
 }
 
 .section-border {
