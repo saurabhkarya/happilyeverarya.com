@@ -112,6 +112,13 @@
     </div>
   </section>
 
+  <!-- <section>
+    <form action="https://sheetdb.io/api/v1/irryx7cmk4abc" method="POST" id="sheetdb-form">
+      Name: <input name="data[name]">
+      Email: <input name="data[email]">
+      <button type="submit">Submit</button>
+    </form>
+  </section> -->
   <section id="invitation" class="section-padding main-sec">
     <section class="intro-form">
       <ul>
@@ -124,32 +131,33 @@
             details.
           </h3>
         </li>
-        <form id="sheetdb-form" class="rsvp-form" action="https://sheetdb.io/api/v1/irryx7cmk4abc" method="POST"></form>
-        <li>
-          <h4>Name:</h4>
-        </li>
-        <!-- <div class="col-md-6 col-sm-6"> -->
-        <div class="form-input-group">
-          <i class="fa fa-user"></i><input id="nameinp" name="data[name]" class="" placeholder="" required />
-        </div>
-        <!-- </div> -->
-        <li>
-          <h4>Email:</h4>
-        </li>
-        <li>
+        <form action="https://sheetdb.io/api/v1/irryx7cmk4abc" method="POST" id="sheetdb-form">
+          <li>
+            <h4>Name:</h4>
+          </li>
           <!-- <div class="col-md-6 col-sm-6"> -->
           <div class="form-input-group">
-            <i class="fa fa-envelope"></i><input id="emailinp" type="email" name="data[email]" class="" placeholder=""
-              required />
+            <i class="fa fa-user"></i>
+            <input id="nameinp" name="data[name]" class="" placeholder="" required />
           </div>
           <!-- </div> -->
-        </li>
-        <li>
-          <div class="row">
-            <div class="col-md-12" id="alert-wrapper"></div>
-          </div>
-          <button class="btn-fill cont-btn rsvp-btn" type="submit">Continue -></button>
-          </form>
+          <li>
+            <h4>Email:</h4>
+          </li>
+          <li>
+            <!-- <div class="col-md-6 col-sm-6"> -->
+            <div class="form-input-group">
+              <i class="fa fa-envelope"></i>
+              <input id="emailinp" type="email" name="data[email]" class="" placeholder="" required />
+            </div>
+            <!-- </div> -->
+          </li>
+          <li>
+            <div class="row">
+              <div class="col-md-12" id="alert-wrapper"></div>
+            </div>
+            <button class="btn-fill cont-btn rsvp-btn" type="submit">Continue -></button>
+        </form>
         </li>
       </ul>
     </section>
