@@ -1199,4 +1199,6 @@ body.modal-open {
   margin: 3% 2% 0 0;
 }
 
-
+.hidden {
+  display: none;
+}
