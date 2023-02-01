@@ -339,11 +339,7 @@ section .header {
   transition: opacity 0.5s;
 }
 .nav-toggle {
-  position: absolute;
-  top: 0;
-  right: 15px;
-  z-index: 999999;
-  padding: 10px 35px 16px 0;
+  display: flex;
   cursor: pointer;
 }
 .nav-toggle:focus {
@@ -360,7 +356,7 @@ section .header {
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
   border-radius: 1px;
-  background: #fff;
+  background: #3A7FD4;
   cursor: pointer;
 }
 .nav-toggle span:before {
@@ -400,10 +396,7 @@ section .header {
   transform: translatey(-10px) rotate(-45deg);
 }
 .navicon {
-  position: absolute;
-  height: 26px;
-  right: 10px;
-  top: 48px;
+  padding: 3% 3% 0 0;
   visibility: hidden;
   transition: all 300ms ease-in-out;
 }
@@ -446,7 +439,8 @@ section .header {
   position: fixed;
   width: 100%;
   z-index: 999;
-  display: inline-block;  
+  display: inline-block;
+  background: white;
 }
 .fixed {
   position: fixed;
@@ -455,14 +449,14 @@ section .header {
   width: 100%;
 }
 header {
-  padding: 50px 0;
+  padding: 3% 0;
   position: relative;
   width: 1170px;
   margin: 0 auto;
   transition: padding 300ms ease-in-out;
 }
 header a {
-  color: #fff;
+  color: #3A7FD4;
   /* text-transform: uppercase; */
   font-size: 13px;
 }
@@ -1036,4 +1030,9 @@ body.modal-open {
   .cud-img, #SAGA-logo {
     display: none;
   }
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
 }
